@@ -8,7 +8,9 @@ l=float(input('Length of the rectangle:'))
 b=float(input('Breadth of the rectangle:'))
 perimeter=2*(l+b)
 arear=l*b
-print('The perimeter of the rectangle=',perimeter,'cm')
+res = 'The perimeter of the rectangle = {}cm'
+print('')
+print(res.format(perimeter))
 print('The area of the rectangle=',arear,'cm^2')
 s=float(input('Enter the length of the square='))
 perimeters=4*s

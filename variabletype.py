@@ -1,12 +1,17 @@
-fruits = [4,5,'a']
-food = ['rice','beans']
+fruits = ['mango','pine-apple','apple','lemon','grape']
 
-a = type(fruits)
+fruits.append('orange')
+fruits.append('watermelon')
 
-b = 456.4
+fruits.insert(0,'guava')
 
-if type(b) == float:
-    print('B is a float')
+s = fruits.copy()
 
-print(type(b))
+foods = ['rice','beans','yam']
+foods.extend(fruits)
 
+foods.remove('watermelon')
+
+foods.pop()
+
+print(foods)
