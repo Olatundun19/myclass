@@ -21,8 +21,8 @@ if opt == '1' or opt == '2' or opt == '3' or opt == '4' or opt == '5':
          i=x*12
          print(str(x) + 'Feet = ' + str(i) + 'inches')
    except:
-      print('You have made a wrong entry, please try again')
+      print('You have made a wrong entry, please try again!!!')
 else:
-   print('ERROR!!WRONG OPTION')
+   print('ERROR!!WRONG OPTION!!!')
 
 
