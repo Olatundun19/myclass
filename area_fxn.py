@@ -1,8 +1,7 @@
 
 l = 0
 b = 0
-r = 0
-pi = 22/7
+
 
 def res_prt(a,v,res,s):
     if s == 'a':
@@ -43,6 +42,7 @@ def peri_squa():
 
 def area_cir():
     val_input('c')
+    pi = 22/7
     res= pi*r*r
     res_prt('area','circle',res,'a')
 
