@@ -1,7 +1,8 @@
 
 l = 0
 b = 0
-
+r = 0
+pi = 22/7
 
 def res_prt(a,v,res,s):
     if s == 'a':
@@ -10,12 +11,15 @@ def res_prt(a,v,res,s):
         print('The {} of the {} = {}cm'.format(a,v,res))
 
 def val_input(s):
-    global l, b
+    global l, b, r, pi
     if s == 'r':
         l = float(input('Enter the Length of the rectangle: '))
         b = float(input('Enter the Breadth of the rectangle: '))
     elif s == 's':
         l = float(input('Enter the Length of the square: '))
+    elif s == 'c':
+        r=float(input('Enter the radius of the circle'))
+        pi = 22/7
 
 def area_rect():
     val_input('r')
@@ -26,6 +30,26 @@ def peri_rect():
     val_input('r')
     res = 2 * (l + b)
     res_prt('perimeter','rectangle',res,'p')
+
+def area_squa():
+    val_input('s')
+    res= l*l
+    res_prt('area','square',res,'a')
+
+def peri_squa():
+    val_input('s')
+    res=4*l
+    res_prt('perimeter','square',res,'p')
+
+def area_cir():
+    val_input('c')
+    res= pi*r*r
+    res_prt('area','circle',res,'a')
+
+def peri_cir():
+    val_input('c')
+    res= 2*pi*r
+    res_prt('perimeter','circle',res,'p')
 
 def intro(a,v):
     print('The {} of {} Computation Selected!!!'.format(a,v))
@@ -45,3 +69,17 @@ if opt == '1':
 elif opt == '2':
     intro('perimeter','rectangle')
     peri_rect()
+elif opt == '3':
+    intro('area','square')
+    area_squa()
+elif opt =='4':
+    intro('perimeter','square')
+    peri_squa()
+elif opt =='5':
+    intro('area','circle')
+    area_cir()
+elif opt =='6':
+    intro('perimeter','circle')
+    peri_cir()
+else:
+    print('WRONG OPTION!!!TRY AGAIN PLEASE')
