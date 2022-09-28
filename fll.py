@@ -1,7 +1,7 @@
-from myfunc import sqr
+import myfunc
 
 a = -9
 
-b = sqr(a)
+b = myfunc.pi()
 
 print(b)

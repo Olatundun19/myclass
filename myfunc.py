@@ -16,3 +16,9 @@ def sqr(v):
         return 0
     elif v < 0:
         return 'j' + str(sq(abs(v)))
+
+def pow(a,b):
+    return a ** b
+
+def pi():
+    return 22 / 7
