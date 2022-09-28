@@ -17,21 +17,35 @@ def w2kw(t):
 def cm2mm(o):
     return o*10
 
-a = float(input('Enter the value in m: '))
-print('The conversion in km = ' + str(m2km(a)))
-b=  float(input('Enter the value in km: '))
-print('The conversion in m ='+str(km2m(b)))
-c=  float(input('Enter the value in c: '))
-print('The conversion in k ='+str(c2k(c)))
-d=  float(input('Enter the value in ft: '))
-print('The conversion in m ='+str(ft2m(d)))
-e=  float(input('Enter the value in yd: '))
-print('The conversion in in ='+str(yd2in(e)))
-f=  float(input('Enter the value in pa: '))
-print('The conversion in kpa ='+str(pa2kpa(f)))
-g=  float(input('Enter the value in j: '))
-print('The conversion in wh ='+str(j2wh(g)))
-h=  float(input('Enter the value in w: '))
-print('The conversion in kw ='+str(w2kw(h)))
-i=  float(input('Enter the value in cm: '))
-print('The conversion in mm ='+str(cm2mm(i)))
+print('This programme converts values')
+print('1.m to km .2.km to m .3.c to k .4.ft to m .5.yd to in .6.pa to kpa .7.j to wh .8.w to kw .9.cm to mm')
+opt=input('Enter option please:')
+if opt=='1':
+    a = float(input('Enter the value in m: '))
+    print('The conversion in km = ' + str(m2km(a)))
+elif opt=='2':
+    b=  float(input('Enter the value in km: '))
+    print('The conversion in m ='+str(km2m(b)))
+elif opt=='3':
+    c=  float(input('Enter the value in c: '))
+    print('The conversion in k ='+str(c2k(c)))
+elif opt=='4':
+    d=  float(input('Enter the value in ft: '))
+    print('The conversion in m ='+str(ft2m(d)))
+elif opt=='5':
+    e=  float(input('Enter the value in yd: '))
+    print('The conversion in in ='+str(yd2in(e)))
+elif opt=='6':
+    f=  float(input('Enter the value in pa: '))
+    print('The conversion in kpa ='+str(pa2kpa(f)))
+elif opt=='7':
+    g=  float(input('Enter the value in j: '))
+    print('The conversion in wh ='+str(j2wh(g)))
+elif opt=='8':
+    h=  float(input('Enter the value in w: '))
+    print('The conversion in kw ='+str(w2kw(h)))
+elif opt=='9':
+    i=  float(input('Enter the value in cm: '))
+    print('The conversion in mm ='+str(cm2mm(i)))
+else:
+    print('WRONG OPTION')
