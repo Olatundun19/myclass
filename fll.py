@@ -1,7 +1,11 @@
-import myfunc
+import math
+
+from myfunc import linear
 
 a = -9
 
-b = myfunc.pi()
 
-print(b)
+
+c = linear(3,4)
+
+print(c)

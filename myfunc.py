@@ -22,3 +22,6 @@ def pow(a,b):
 
 def pi():
     return 22 / 7
+
+def linear(a,b):
+    return -b/a
