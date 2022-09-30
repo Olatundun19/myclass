@@ -25,3 +25,4 @@ def pi():
 
 def linear(a,b):
     return -b/a
+
