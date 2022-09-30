@@ -26,3 +26,22 @@ def pi():
 def linear(a,b):
     return -b/a
 
+def quad(a,b,c):
+    a = float(a)
+    b = float(b)
+    c = float(c)
+    d = (b ** 2) - (4 * a * c)
+    if d == 0:
+        x = -b / (2 * a)
+        res = [str(x), str(x)] 
+    elif d < 0:
+        d = (-d) ** 0.5
+        re = -b / (2 * a)
+        im = d / (2 * a)
+        res = [str(re) + '+j' + str(im), str(re) + '-j' + str(im)]
+    else:
+        d = (d ** 0.5)
+        x1 = (-b + d) / (2 * a)
+        x2 = (-b - d) / (2 * a)
+        res = [str(x1),  str(x2)]
+    return res
