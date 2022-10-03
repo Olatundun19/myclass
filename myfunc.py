@@ -45,3 +45,7 @@ def quad(a,b,c):
         x2 = (-b - d) / (2 * a)
         res = [str(x1),  str(x2)]
     return res
+
+
+    ax + b = 0
+    x = -b/a
