@@ -1,0 +1,5 @@
+val = float(input('Enter the number: '))
+dp = int(input('The significant figure: '))
+print('The value of {} to {} decimal places = {}'.format(val,dp,round(val,dp)))
+print('Invalid number entered, Pls try again...')
+print('Copyright2022')
