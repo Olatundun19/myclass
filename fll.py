@@ -6,5 +6,5 @@ b = myfunc.pi()
 
 x= myfunc.quad(3,5,5)
 
-
-print(x)
+p= myfunc.sure(2,3,4,-3)
+print(p)

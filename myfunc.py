@@ -46,6 +46,13 @@ def quad(a,b,c):
         res = [str(x1),  str(x2)]
     return res
 
+def sim(a,b,c,d,e,f):
+    x=((c*e)-(b*f))/((a*e)-(b*d))
+    y=((c*d)-(a*f))/((b*d)-(a*e))
+    ans=['x=',str(x), 'y=',str(y)]
+    return ans
 
-    ax + b = 0
-    x = -b/a
+def sure(a,b,x,y):
+    c= (a*x)+(b*y)
+    cas=('c=',str(c))
+    return cas
