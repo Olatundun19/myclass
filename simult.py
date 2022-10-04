@@ -18,7 +18,3 @@ x(ae - bd) = (ce - bf)
 x = (ce - bf) / (ae - bd)
 y = (cd - af) / (bd - ae)
 '''
-
-
-
-
