@@ -22,4 +22,5 @@ words = {
 }
 print('Dictinary!!!')
 word = input('Enter your word: ')
-print('The dictinary meaning of {} is {}'.format(word,words[word]))
+x = word.lower()
+print('The dictinary meaning of {} is {}'.format(word,words[x]))

@@ -1,6 +1,6 @@
 fruits = ['mango','guava','apple','lemon']
-a = len(fruits) - 1
-i = 0
-while i <= a:
+i = len(fruits) - 1
+n = 0
+while i >= n:
     print(fruits[i])
-    i = i + 1
+    i = i - 1
