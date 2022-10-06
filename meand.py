@@ -13,5 +13,15 @@ while i<=n:
 k=j/n
 p=len(courses)-1
 i=0
+a=0
 while i<=p:
     x = abs(courses[i] - k)
+    a=a+x
+    i=i+1
+md = a/n
+print('Total score = {}\nAverage score = {}\nMean Deviation = {}'.format(j,k,md))
+
+
+
+#print('Average score = {}'.format(k))
+#print('Mean Deviation = {}'.format(md))
