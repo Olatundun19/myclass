@@ -6,7 +6,7 @@ sname = input('Enter your surname: ')
 
 
 f = open('details.txt',"w")
-f.write('Surname: ' + sname + '.\n')
+f.write('Surname: ' + sname + '\n')
 f.close()
 
 print('Details saved successfully!!!')
