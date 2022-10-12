@@ -11,3 +11,5 @@ f = open("new.txt","r")
 res = f.read()
 
 print(res)
+
+import detail
