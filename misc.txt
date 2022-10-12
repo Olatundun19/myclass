@@ -1,0 +1,29 @@
+    if uname == x:
+        print('User exist in the database')
+        print('Your name is: ' + users['name'])
+        if users[x][pword] == pword:
+            print(users[x][name] + ', Logged in Successfully!!!')
+        else:
+            print(users[x] + ', Wrong Password, Try Again!!!')
+        break
+
+
+{
+    "lname": "sandra",
+    "fname": "yomi",
+    "mname": "h",
+    "name": "sandra yomi h",
+    "age": "12",
+    "matric": "ehd",
+    "pword": "123",
+    "uname": "sandr"
+}{
+    "lname": "sandra",
+    "fname": "yemi",
+    "mname": "o",
+    "name": "sandra yemi o",
+    "age": "34",
+    "matric": "wjd",
+    "pword": "456",
+    "uname": "sandra"
+}
