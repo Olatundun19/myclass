@@ -1,0 +1,10 @@
+{
+    "lname": "olayemi",
+    "fname": "tundun",
+    "mname": "oyinkansola",
+    "name": "olayemi tundun oyinkansola",
+    "age": "12",
+    "matric": "23456",
+    "pword": "234",
+    "uname": "werty"
+}
