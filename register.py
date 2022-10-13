@@ -1,34 +1,46 @@
 import json
 import os
+import datetime
+
 print('Register User')
 print('The program stores the user details')
 
-ag=int(input('Enter your age:'))
-if ag<18:
+age = int(input('Enter your age: '))
+if age < 18:
     print('SORRY USER MUST BE 18 OR ABOVE')
+
 else:
-    lname = input('Enter your Last name: ')
-    fname = input('Enter your First name: ')
-    mname = input('Enter your Middle name: ')
-    uname = input('Enter your Username: ')
-    age = ag
-    matric = input('Enter your Matric number: ')
-    course = input('Enter your Course: ')
+    dob = input('Enter your Date of Birth: ')
+    a = dob.split('/')
+    a = int(a[2])
+    x = datetime.datetime.now()
+    x = x.year
+    ag = x - a
+    if age != ag:
+        print('Age entered is not consistent!!!')
 
-    while 1:
-       pword = input('Enter your password: ')
-       x = len(pword)
+    else:
+        lname = input('Enter your Last name: ')
+        fname = input('Enter your First name: ')
+        mname = input('Enter your Middle name: ')
+        uname = input('Enter your Username: ')
+        matric = input('Enter your Matric number: ')
+        course = input('Enter your Course: ')
 
-       if x <= 7:
-          print('Password should be more that 7 characters!!!')
-       else: 
-          break
+        while 1:
+            pword = input('Enter your password: ')
+            x = len(pword)
 
-    cpword = input('Confirm your password: ')
+            if x <= 7:
+                print('Password should be more that 7 characters!!!')
+            else: 
+                break
 
-    if pword == cpword:
-      name = lname+ ' ' + fname + ' ' + mname
-      detail = { 
+        cpword = input('Confirm your password: ')
+
+        if pword == cpword:
+            name = lname+ ' ' + fname + ' ' + mname
+            detail = { 
        
             'lname':lname,
             'fname':fname,
@@ -41,5 +53,5 @@ else:
                 }
 
    
-    else:
-      print('Incorrect Password entered, Pls Try again!!!')
+        else:
+            print('Incorrect Password entered, Pls Try again!!!')
