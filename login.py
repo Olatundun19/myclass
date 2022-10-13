@@ -2,16 +2,15 @@ import json
 
 print('Login')
 
-f = open('users.txt','r')
-users = f.read()
-f.close()
+with open('users.json') as f:
+   users = json.load(f)
 
-user = json.load(users)
+print(users)
 
 #uname = input('Enter your username: ')
 #pword = input('Enter your password: ')
 
-print(user)
+
 
 
 

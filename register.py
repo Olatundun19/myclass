@@ -1,4 +1,6 @@
 import json
+import os
+
 print('Register User')
 print('The program stores the user details')
 
@@ -11,13 +13,21 @@ age = input('Enter your Age: ')
 matric = input('Enter your Matric number: ')
 course = input('Enter your Course: ')
 
-pword = input('Enter your password: ')
+while 1:
+    pword = input('Enter your password: ')
+    x = len(pword)
+
+    if x <= 7:
+        print('Password should be more that 7 characters!!!')
+    else: 
+        break
+
 cpword = input('Confirm your password: ')
 
 if pword == cpword:
     name = lname+ ' ' + fname + ' ' + mname
-    detail = {
-    
+    detail = { 
+       
             'lname':lname,
             'fname':fname,
             'mname':mname,
@@ -25,16 +35,9 @@ if pword == cpword:
             'age':age,
             'matric':matric,
             'pword':pword,
-            'uname':uname
         
+                }
 
-}
-    x = json.dumps(detail,indent=4)
-
-    f = open('users.txt','a')
-    f.write(x)
-    f.close()
-    print(name + ', details saved successfully!!!')
-
+   
 else:
-    print('Incorrect Password entered, Pls Try again!!!')
+     print('Incorrect Password entered, Pls Try again!!!')

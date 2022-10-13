@@ -27,3 +27,15 @@
     "pword": "456",
     "uname": "sandra"
 }
+
+
+ det = json.dumps(detail,indent=4)
+
+    if not(os.path.exists('users.json')):
+        detail[users].append(det)
+    else:
+        pass
+
+    with open("users.json", "a") as outfile:
+        outfile.write(det)
+        print(name + ', details saved successfully!!!')
