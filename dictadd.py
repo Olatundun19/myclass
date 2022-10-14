@@ -22,22 +22,15 @@ if os.path.exists('diction.json'):
     diction = f.read()
     f.close()
     diction = json.loads(diction)#Conversion from JSON to dictionary
-    chk = False
     for x in diction:
         if x == word:
-            chk = True
             opt = input('Word exist in the dictionary, do you want to overwrite(y/n): ')
             opt = opt.lower()
             if opt == 'y':
                 write(diction,word,meaning,wd)
-                break
             else:
                 print('Operation cancelled!!!')
                 break
-
-    if chk == False:
-        write(diction,word,meaning,wd)
-
 
 else:
     diction = {}

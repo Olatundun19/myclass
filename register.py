@@ -30,7 +30,6 @@ else:
         while 1:
             pword = input('Enter your password: ')
             x = len(pword)
-
             if x <= 7:
                 print('Password should be more that 7 characters!!!')
             else: 

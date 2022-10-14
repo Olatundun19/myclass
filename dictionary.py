@@ -18,6 +18,7 @@ words = {
         'water': 'A colourless,transparent,odourless liquid that forms the seas,lakes,rivers, and rain and is the basis of fluids of living organisms',
         'plate': 'A flat dish, typically circular and made of china from which food is eaten or served',
         'broom': 'A long-handled brush,used for sweeping'
+        
 
 }
 print('Dictinary!!!')
